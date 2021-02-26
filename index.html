@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Librería Devux" />
+    <link rel="stylesheet" type="text/css" href="vendors/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/grid.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <title>Librería Devux</title>
+
+    <link href="vendors/bootstrap.scss" rel="stylesheet" type="text/css" />
+
+    <style>
+      /*        .row div {
+        padding: 20px 10px;
+        border: 1px solid;
+        }*/
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="hero-text-box" alt="library" class="library__img"></div>
+      <!--    <button class="login-button">Login </button>-->
+
+      <nav>
+        <p class="welcome">Inicia sesión a biblioteca</p>
+        <form class="login">
+          <input
+            type="text"
+            placeholder="user"
+            class="login__input login__input--user"
+          />
+          <!-- In practice, use type="password" -->
+          <input
+            type="text"
+            placeholder="PIN"
+            maxlength="4"
+            class="login__input login__input--pin"
+          />
+          <button class="login__btn">&rarr;</button>
+        </form>
+      </nav>
+    </header>
+
+    <section class="cards">
+      <form method="post" action="#" class="contact__form">
+        <div class="book-specs">
+          <div class="container-fluid">
+            <div class="title__card">
+              <h3>
+                Libro
+                <ion-icon name="book-outline" class="icon"></ion-icon>
+              </h3>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4">
+                <label class="spec_libro" for="name"> Nombre </label>
+              </div>
+              <div class="col-sm-8">
+                <input
+                  class="col-sm"
+                  type="text"
+                  name="name"
+                  placeholder="Nombre"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <label class="spec_libro" for="name"> Autor </label>
+              </div>
+              <div class="col-sm-8">
+                <input
+                  class="col-sm"
+                  type="text"
+                  name="name"
+                  placeholder="Autor"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <label class="spec_libro" for="name"> Categoría </label>
+              </div>
+              <div class="col-sm-8">
+                <select
+                  class="label__placeholder col-sm-12"
+                  name="category"
+                  id="category"
+                >
+                  <option value="Terror" selected>Terror</option>
+                  <option value="Misterio">Misterio</option>
+                  <option value="Drama">Drama</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <label class="spec_libro" for="name">
+                  Fecha de publicación
+                </label>
+              </div>
+              <div class="col-sm">
+                <input
+                  class="col-sm"
+                  type="date"
+                  name="name"
+                  placeholder="Fecha"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <label class="spec_libro" for="name"> Usuario </label>
+              </div>
+              <div class="col-sm-8">
+                <input
+                  class="col-sm"
+                  type="text"
+                  name="name"
+                  placeholder="Usuario"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="category-specs">
+          <div class="container-fluid">
+            <div class="title__card">
+              <h3>
+                Categoría
+                <ion-icon name="folder-open-outline" class="icon"></ion-icon>
+              </h3>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <label class="spec_libro" for="name"> Nombre </label>
+              </div>
+              <div class="col-sm-8">
+                <input
+                  class="col-sm"
+                  type="text"
+                  name="name"
+                  placeholder="Nombre"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <label class="spec_libro" for="name"> Descripción </label>
+              </div>
+              <div class="col-sm-8">
+                <textarea name="description" placeholder="Descripción">
+                </textarea>
+              </div>
+            </div>
+            <div class="title__card">
+              <h3>
+                Usuario
+                <ion-icon name="person-circle-outline" class="icon"></ion-icon>
+              </h3>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <label class="spec_libro" for="name"> Nombre </label>
+              </div>
+              <div class="col-sm">
+                <input
+                  class="col-sm"
+                  type="text"
+                  name="name"
+                  placeholder="Nombre"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <label class="spec_libro" for="name">Email </label>
+              </div>
+              <div class="col-sm-8">
+                <input
+                  class="col-sm"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Correo electrónico"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+      integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="resources/js/script.js"></script>
+  </body>
+</html>
